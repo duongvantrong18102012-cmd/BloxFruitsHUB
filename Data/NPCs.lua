@@ -1,0 +1,52 @@
+-- ===== DATA/NPCS.LUA =====
+local NPCs = {
+    -- Quest
+    ["Bandit Quest Giver"] = {Sea=1, Type="Quest", Island="Starter Island (Pirate)", Pos=Vector3.new(-50,10,0)},
+    ["Marine Quest Giver"] = {Sea=1, Type="Quest", Island="Starter Island (Marine)", Pos=Vector3.new(50,10,0)},
+    ["Adventurer"] = {Sea=1, Type="Quest", Island="Jungle", Pos=Vector3.new(-1200,50,2500)},
+    ["Desert Adventurer"] = {Sea=1, Type="Quest", Island="Desert", Pos=Vector3.new(200,40,4000)},
+    ["Marine Leader"] = {Sea=1, Type="Quest", Island="Marine Fortress", Pos=Vector3.new(1500,70,4800)},
+    ["Sky Adventurer"] = {Sea=1, Type="Quest", Island="Skylands", Pos=Vector3.new(2500,200,5000)},
+    ["Head Jailer"] = {Sea=1, Type="Quest", Island="Prison", Pos=Vector3.new(3000,80,5200)},
+    ["Jail Keeper"] = {Sea=1, Type="Quest", Island="Prison", Pos=Vector3.new(3000,80,5200)},
+    ["Submerged Quest Giver 1"] = {Sea=1, Type="Quest", Island="Underwater City", Pos=Vector3.new(4500,-100,6000)},
+    ["Submerged Quest Giver 2"] = {Sea=1, Type="Quest", Island="Underwater City", Pos=Vector3.new(4500,-100,6000)},
+    ["Sky Quest Giver 2"] = {Sea=1, Type="Quest", Island="Upper Skylands", Pos=Vector3.new(5000,300,6200)},
+    ["Area 1 Quest Giver"] = {Sea=2, Type="Quest", Island="Kingdom of Rose", Pos=Vector3.new(-2000,80,7000)},
+    ["Marine Quest Giver (Sea 2)"] = {Sea=2, Type="Quest", Island="Green Zone", Pos=Vector3.new(-1500,50,7500)},
+    ["Pirate Port Quest Giver"] = {Sea=3, Type="Quest", Island="Port Town", Pos=Vector3.new(-3000,20,9500)},
+    ["Hydra Town Quest Giver"] = {Sea=3, Type="Quest", Island="Hydra Island", Pos=Vector3.new(-2700,30,9800)},
+    ["Submerged Quest Giver 1 (Sea 3)"] = {Sea=3, Type="Quest", Island="Submerged Island", Pos=Vector3.new(300,-50,12300)},
+    ["Submerged Quest Giver 2 (Sea 3)"] = {Sea=3, Type="Quest", Island="Submerged Island", Pos=Vector3.new(300,-50,12300)},
+    ["Submerged Quest Giver 3"] = {Sea=3, Type="Quest", Island="Submerged Island", Pos=Vector3.new(300,-50,12300)},
+    -- Shop
+    ["Blox Fruit Dealer"] = {Sea=1, Type="Shop", Island="Starter Island (Pirate)", Pos=Vector3.new(-50,10,0)},
+    ["Sword Dealer"] = {Sea=1, Type="Shop", Island="Starter Island (Pirate)", Pos=Vector3.new(-50,10,0)},
+    ["Boat Dealer"] = {Sea=1, Type="Shop", Island="Starter Island (Pirate)", Pos=Vector3.new(-50,10,0)},
+    ["Blox Fruit Dealer Cousin"] = {Sea=1, Type="Shop", Island="Jungle", Pos=Vector3.new(-1200,50,2500)},
+    ["Sword Dealer of the West"] = {Sea=1, Type="Shop", Island="Pirate Village", Pos=Vector3.new(-500,30,3500)},
+    ["Hasan"] = {Sea=1, Type="Shop", Island="Desert", Pos=Vector3.new(200,40,4000)},
+    ["Weapon Dealer"] = {Sea=1, Type="Shop", Island="Middle Town", Pos=Vector3.new(600,50,4200)},
+    ["Sword Dealer of the East"] = {Sea=1, Type="Shop", Island="Frozen Village", Pos=Vector3.new(900,60,4500)},
+    ["Advanced Weapon Dealer"] = {Sea=1, Type="Shop", Island="Marine Fortress", Pos=Vector3.new(1500,70,4800)},
+    ["Master Sword Dealer"] = {Sea=1, Type="Shop", Island="Skylands", Pos=Vector3.new(2500,200,5000)},
+    ["Mad Scientist"] = {Sea=1, Type="Shop", Island="Skylands", Pos=Vector3.new(2500,200,5000)},
+    ["Living Skeleton"] = {Sea=1, Type="Shop", Island="Magma Village", Pos=Vector3.new(4000,40,5800)},
+    ["Legendary Sword Dealer"] = {Sea=2, Type="Shop", Island="Kingdom of Rose", Pos=Vector3.new(-2000,80,7000)},
+    ["Blox Fruit Dealer (Sea 3)"] = {Sea=3, Type="Shop", Island="Port Town", Pos=Vector3.new(-3000,20,9500)},
+    -- Hidden
+    ["Yoshi"] = {Sea=1, Type="Hidden", Island="Skylands", Pos=Vector3.new(2500,200,5000), Note="Bán Tomoe Ring"},
+    ["Alchemist"] = {Sea=2, Type="Hidden", Island="Green Zone", Pos=Vector3.new(-1500,50,7500), Note="Dưới nấm xanh"},
+    ["Shafi"] = {Sea=3, Type="Hidden", Island="Tiki Outpost", Pos=Vector3.new(400,30,12100), Note="Dưới hầm cung điện"},
+    ["Sharkman Karate V2 NPC"] = {Sea=3, Type="Hidden", Island="Submerged Island", Pos=Vector3.new(300,-50,12300), Note="Cần đạt yêu cầu"},
+    -- Skill Teacher
+    ["Ability Teacher"] = {Sea=1, Type="Skill", Island="Frozen Village", Pos=Vector3.new(900,60,4500)},
+    ["Water Kung Fu Teacher"] = {Sea=1, Type="Skill", Island="Underwater City", Pos=Vector3.new(4500,-100,6000)},
+    ["Instinct Teacher"] = {Sea=1, Type="Skill", Island="Upper Skylands", Pos=Vector3.new(5000,300,6200)},
+    ["Dark Step Teacher (Sea 1)"] = {Sea=1, Type="Skill", Island="Pirate Village", Pos=Vector3.new(-500,30,3500)},
+    ["Dark Step Teacher (Sea 3)"] = {Sea=3, Type="Skill", Island="Castle on the Sea", Pos=Vector3.new(-1600,50,10600)},
+    ["Sharkman Teacher"] = {Sea=3, Type="Skill", Island="Castle on the Sea", Pos=Vector3.new(-1600,50,10600)},
+    ["Dragon Talon Sage"] = {Sea=3, Type="Skill", Island="Tiki Outpost", Pos=Vector3.new(400,30,12100)},
+}
+
+return NPCs
